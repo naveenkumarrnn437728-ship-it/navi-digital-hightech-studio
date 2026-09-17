@@ -47,9 +47,192 @@ footer{background:#0c0c0c;color:#aaa;text-align:center;padding:20px;font-size:13
 <div class="card"><div class="icon">💾</div><h3>Digital Delivery</h3><p>Convenient digital delivery including pen drive options.</p></div>
 </div></section>
 
-<section id="gallery"><div class="title"><h2>Gallery</h2><p>Demo gallery — actual studio photos can be added later</p></div>
-<div class="grid gallery"><div>WEDDING</div><div>PORTRAIT</div><div>EVENT</div><div>STUDIO</div></div></section>
+<section id="gallery" class="gallery-section">
+  <div class="container">
+    <div class="section-title">
+      <span>OUR WORK</span>
+      <h2>Demo Gallery</h2>
+      <p>Photography moments captured with style & creativity.</p>
+    </div>
 
+    <div class="gallery-grid">
+
+      <!-- Wedding -->
+      <div class="gallery-card">
+        <img
+          src="https://images.pexels.com/photos/169198/pexels-photo-169198.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          alt="Wedding Photography"
+          loading="lazy">
+        <div class="gallery-overlay">
+          <span>Wedding</span>
+          <h3>Wedding Photography</h3>
+        </div>
+      </div>
+
+      <!-- Portrait -->
+      <div class="gallery-card">
+        <img
+          src="https://images.pexels.com/photos/1689731/pexels-photo-1689731.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          alt="Portrait Photography"
+          loading="lazy">
+        <div class="gallery-overlay">
+          <span>Portrait</span>
+          <h3>Portrait Photography</h3>
+        </div>
+      </div>
+
+      <!-- Couple -->
+      <div class="gallery-card">
+        <img
+          src="https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          alt="Couple Photography"
+          loading="lazy">
+        <div class="gallery-overlay">
+          <span>Couple</span>
+          <h3>Couple Photography</h3>
+        </div>
+      </div>
+
+      <!-- Event -->
+      <div class="gallery-card">
+        <img
+          src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          alt="Event Photography"
+          loading="lazy">
+        <div class="gallery-overlay">
+          <span>Events</span>
+          <h3>Event Photography</h3>
+        </div>
+      </div>
+
+      <!-- Family -->
+      <div class="gallery-card">
+        <img
+          src="https://images.pexels.com/photos/1602738/pexels-photo-1602738.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          alt="Family Photography"
+          loading="lazy">
+        <div class="gallery-overlay">
+          <span>Family</span>
+          <h3>Family Photography</h3>
+        </div>
+      </div>
+
+      <!-- Outdoor -->
+      <div class="gallery-card">
+        <img
+          src="https://images.pexels.com/photos/1128317/pexels-photo-1128317.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          alt="Outdoor Photography"
+          loading="lazy">
+        <div class="gallery-overlay">
+          <span>Outdoor</span>
+          <h3>Outdoor Photography</h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+.gallery-section {
+  padding: 80px 20px;
+  background: #0b0b0b;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title span {
+  color: #d4af37;
+  letter-spacing: 3px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.section-title h2 {
+  font-size: 42px;
+  margin: 10px 0;
+}
+
+.section-title p {
+  color: #aaa;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.gallery-card {
+  position: relative;
+  height: 330px;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #181818;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.08);
+}
+
+.gallery-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 45px 20px 20px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.9));
+}
+
+.gallery-overlay span {
+  color: #d4af37;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.gallery-overlay h3 {
+  margin: 6px 0 0;
+  font-size: 21px;
+}
+
+@media (max-width: 800px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-card {
+    height: 300px;
+  }
+
+  .section-title h2 {
+    font-size: 32px;
+  }
+}
+</style>
 <section id="about"><div class="title"><h2>About NAVI</h2><p>Your local creative studio</p></div>
 <div class="card" style="max-width:850px;margin:auto;text-align:center">
 <p><b>NAVI DIGITAL HIGH TECH STUDIO & VIDEOS</b> is a professional photography and creative service studio focused on preserving important moments through photography, videography, editing, album design, printing and framing.</p>
